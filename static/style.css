@@ -1,0 +1,16 @@
+body {
+    font-family: 'Courier New', monospace;
+}
+
+.terminal {
+    background-color: #000;
+    border: 1px solid #333;
+}
+
+.question {
+    color: #0dcaf0;
+}
+
+.output {
+    color: #00ff00;
+}

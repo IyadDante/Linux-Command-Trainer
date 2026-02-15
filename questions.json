@@ -1,0 +1,43 @@
+[
+  { "question": "List files in current directory", "answer": ["ls"], "category": "filesystem", "difficulty": "beginner" },
+  { "question": "List all files including hidden ones", "answer": ["ls -la", "ls -al"], "category": "filesystem", "difficulty": "beginner" },
+  { "question": "Show current directory path", "answer": ["pwd"], "category": "filesystem", "difficulty": "beginner" },
+  { "question": "Change directory to /var/log", "answer": ["cd /var/log"], "category": "filesystem", "difficulty": "beginner" },
+  { "question": "Create a directory named test", "answer": ["mkdir test"], "category": "filesystem", "difficulty": "beginner" },
+  { "question": "Remove a file named file.txt", "answer": ["rm file.txt"], "category": "filesystem", "difficulty": "beginner" },
+
+  { "question": "Recursively delete a directory named temp", "answer": ["rm -r temp", "rm -rf temp"], "category": "filesystem", "difficulty": "intermediate" },
+  { "question": "Find all .log files recursively from current directory", "answer": ["find . -name '*.log'"], "category": "filesystem", "difficulty": "intermediate" },
+  { "question": "Copy file.txt to /tmp directory", "answer": ["cp file.txt /tmp"], "category": "filesystem", "difficulty": "intermediate" },
+  { "question": "Move file.txt to /home/user", "answer": ["mv file.txt /home/user"], "category": "filesystem", "difficulty": "intermediate" },
+
+  { "question": "Change file.txt permissions to 755", "answer": ["chmod 755 file.txt"], "category": "permissions", "difficulty": "intermediate" },
+  { "question": "Change owner of file.txt to user 'iyad'", "answer": ["chown iyad file.txt"], "category": "permissions", "difficulty": "intermediate" },
+
+  { "question": "Show running processes", "answer": ["ps aux"], "category": "processes", "difficulty": "beginner" },
+  { "question": "Kill process with PID 1234", "answer": ["kill 1234"], "category": "processes", "difficulty": "beginner" },
+  { "question": "Force kill process with PID 1234", "answer": ["kill -9 1234"], "category": "processes", "difficulty": "intermediate" },
+  { "question": "Show real-time running processes", "answer": ["top"], "category": "processes", "difficulty": "intermediate" },
+
+  { "question": "Search for the word ERROR inside log.txt", "answer": ["grep ERROR log.txt"], "category": "text_processing", "difficulty": "beginner" },
+  { "question": "Show only first 10 lines of file.txt", "answer": ["head -n 10 file.txt"], "category": "text_processing", "difficulty": "intermediate" },
+  { "question": "Show only last 20 lines of log.txt", "answer": ["tail -n 20 log.txt"], "category": "text_processing", "difficulty": "intermediate" },
+  { "question": "Continuously monitor a growing log file", "answer": ["tail -f log.txt"], "category": "text_processing", "difficulty": "intermediate" },
+
+  { "question": "Show disk usage in human readable format", "answer": ["df -h"], "category": "disk", "difficulty": "beginner" },
+  { "question": "Show size of current directory in human readable format", "answer": ["du -sh ."], "category": "disk", "difficulty": "intermediate" },
+
+  { "question": "Test connectivity to google.com", "answer": ["ping google.com"], "category": "networking", "difficulty": "beginner" },
+  { "question": "Display listening ports", "answer": ["ss -tuln", "netstat -tuln"], "category": "networking", "difficulty": "intermediate" },
+  { "question": "Send HTTP request to example.com", "answer": ["curl http://example.com"], "category": "networking", "difficulty": "intermediate" },
+
+  { "question": "Update package list on Debian/Ubuntu", "answer": ["sudo apt update"], "category": "packages", "difficulty": "beginner" },
+  { "question": "Install nginx on Debian/Ubuntu", "answer": ["sudo apt install nginx"], "category": "packages", "difficulty": "intermediate" },
+
+  { "question": "Start nginx service", "answer": ["sudo systemctl start nginx"], "category": "services", "difficulty": "intermediate" },
+  { "question": "Check nginx service status", "answer": ["sudo systemctl status nginx"], "category": "services", "difficulty": "intermediate" },
+
+  { "question": "Find all files modified in the last 1 day", "answer": ["find . -mtime -1"], "category": "filesystem", "difficulty": "advanced" },
+  { "question": "Search for ERROR in log.txt and show only first 5 results", "answer": ["grep ERROR log.txt | head -n 5"], "category": "text_processing", "difficulty": "advanced" },
+  { "question": "Count number of lines in file.txt", "answer": ["wc -l file.txt"], "category": "text_processing", "difficulty": "advanced" }
+]
